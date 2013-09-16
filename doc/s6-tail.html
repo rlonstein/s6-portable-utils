@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>s6-portable-utils: the s6-tail program</title>
+    <meta name="Description" content="s6-portable-utils: the s6-tail program" />
+    <meta name="Keywords" content="s6-portable-utils command s6-tail tail" />
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.skarnet.org/default.css" /> -->
+  </head>
+<body>
+
+<p>
+<a href="index.html">s6-portable-utils</a><br />
+<a href="http://www.skarnet.org/software/">Software</a><br />
+<a href="http://www.skarnet.org/">www.skarnet.org</a>
+</p>
+
+<h1> The <tt>s6-tail</tt> program </h1>
+
+<p>
+ s6-tail prints a file or its stdin after a certain number of bytes or lines.
+</p>
+
+<h2> Interface </h2>
+
+<pre>
+     s6-tail [ -n <em>lines</em> | -c <em>chars</em> ] [ <em>file</em> ]
+</pre>
+
+<p>
+ s6-tail acts as the generic
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/tail.html">tail</a> utility,
+except that the <strong>-f</strong> option is not supported.
+</p>
+
+<h2> Posixness </h2>
+
+<p>
+ s6-tail <strong>is not</strong> suitable as a Single Unix
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/tail.html">tail</a>
+program; however, if you are never using the <tt>-f</tt> functionality, s6-tail
+scrupulously follows the rest of the specification.
+</p>
+
+</body>
+</html>

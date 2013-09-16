@@ -1,0 +1,5 @@
+-lrandom
+-lstdcrypto
+-lstddjb
+`cat socket.lib`
+`cat taianow.lib`
